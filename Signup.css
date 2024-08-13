@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.signup-Outer-box {
+    width: 100vw;
+    height: 100vh;
+    /*background: linear-gradient(to top left, #f7b42c, #fc575e);*/
+    position: relative;
+    
+}
+
+.signup-Inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background-color:rgb(238, 221, 233);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.sign-up h1 {
+    font-size: 2.5rem;
+    color: #fc575e;
+    text-align: center;
+}
+
+.sign-up p {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.signup-body {
+    margin: 15px 0;
+}
+
+.signup-body p {
+    margin: 10px 0;
+}
+
+.signup-body p label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fc575e;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+#submit {
+    background-color: #fc575e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #f7b42c;
+}
+
+.signup-footer p {
+    color: #333;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #fc575e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-footer p a:hover {
+    text-decoration: underline;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: linear-gradient(45deg, rgba(185, 4, 4, 0.473), transparent);
+    position: absolute;
+    
+}
+
+.c1 {
+    top: 40px;
+    left: 40px;
+    animation: up-down 2s ease-in infinite alternate ;
+}
+
+.c2 {
+    bottom: 40px;
+    right: 40px;
+    animation: down-up 2s ease-in infinite alternate ;
+}
+@keyframes up-down {
+    from {
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(200px);
+    }
+}
+@keyframes down-up {
+    from {
+        transform: translateY(80px);
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    display: block;
+  }
+
+/* Add to your CSS file */
+.toast-message {
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
